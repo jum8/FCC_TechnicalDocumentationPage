@@ -1,0 +1,103 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #4D4E53;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+aside {
+  position: fixed;
+  min-width: 290px;
+  border-right: solid 3px #cecdcd;
+  left: 0;
+  height: 100%;
+}
+
+aside h1 {
+  font-size: 1.8rem;
+  height: 10vh;
+  padding: 1rem 2rem;
+}
+
+aside ul {
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 90vh;
+}
+
+aside ul li {
+  border-top: black solid 1px;
+  padding: .8rem 2rem;
+  height: 3rem;
+  width: 100%;
+}
+
+aside ul a {
+  color: #4D4E53;
+  text-decoration: none;
+}
+
+main {
+  margin-left: 320px;
+  padding: 2rem 3rem;
+}
+
+main header {
+  margin-bottom: 1rem;
+}
+
+main p {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+main code {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  display: block;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  line-height: 2;
+  white-space: pre-line;
+}
+
+main ul {
+  margin-left: 4rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 815px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  aside {
+    position: initial;
+    min-width: none;
+    border: none;
+  }
+  aside ul {
+    height: 200px;
+  }
+  main {
+    margin-left: initial;
+  }
+}
+/*# sourceMappingURL=main.css.map */
